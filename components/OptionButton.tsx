@@ -13,7 +13,7 @@ const OptionButton = ({
     <TouchableOpacity
       onPress={handlePress}
       activeOpacity={0.7}
-      className={` rounded-xl min-h-[62px] my-2 flex flex-row justify-center items-center ${
+      className={` rounded-xl min-h-[62px] my-2 w-full flex flex-row justify-center items-center ${
         isSelected ? " border border-secondary" : " border border-gray-500 "
       }`}
     >

@@ -1,4 +1,5 @@
 import Loader from "@/components/Loader";
+import ProgressBar from "@/components/ProgressBar";
 import QuestionCard from "@/components/QuestionCard";
 import Tick from "@/components/Tick";
 import Wrong from "@/components/Wrong";
@@ -77,7 +78,8 @@ export default function Quiz() {
             <Loader />
           ) : corr === null ? (
             <>
-              <Text>{typeof topic === "string" && topic}</Text>
+              <Text className="text-white" >{topic}</Text>
+              <ProgressBar ind={index}/>
               <QuestionCard
                 ques={questions[index]}
                 handleSubmit={handleAnimate}
