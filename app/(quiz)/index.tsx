@@ -40,7 +40,7 @@ export default function Quiz() {
         timeStamp: String(Date.now()),
         topic: typeof topic === "string" ? topic : "",
         questions,
-        response: answers,
+        response: finalAns,
       };
       storeData(storeObj);
       setTimeout(() => {

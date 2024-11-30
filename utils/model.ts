@@ -6,10 +6,10 @@ export enum Answers {
 }
 
 interface Options {
-    "a": string,
-    "b": string,
-    "c": string,
-    "d": string
+    [a: string]: string,
+    b: string,
+    c: string,
+    d: string
 }
 
 export interface QuesObj {
@@ -24,8 +24,8 @@ export enum Response {
 }
 
 export interface StoredData {
-    timeStamp : string,
-    topic : string,
-    questions : QuesObj[],
-    response : Answers[]
+    timeStamp: string,
+    topic: string,
+    questions: QuesObj[],
+    response: Answers[]
 }
