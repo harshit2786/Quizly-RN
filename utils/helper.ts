@@ -2,7 +2,9 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { StoredData } from "./model";
 
 export const fetchQuizQuestions = async (topic: string) => {
-  const response = await fetch(`https://2815-2401-4900-1cc4-f340-b160-7848-a278-e6cd.ngrok-free.app/getquiz`, {
+  // Add your backend endpoint for getting quiz
+  // For local development using a mobile device, use ngrok for port tunneling
+  const response = await fetch(`https://e10c-171-76-81-56.ngrok-free.app/getquiz`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ topic }),
